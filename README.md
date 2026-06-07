@@ -5,10 +5,10 @@ An end-to-end, content-based fashion recommendation engine that suggests visuall
 * **Similarity Matching**: Integrated **K-Nearest Neighbors (KNN)** with instantly suggests top 5 matching items from the dataset.
 * **Streamlit UI**: For interactive web application allowing users to upload images and get recommendations.
 
-## 🛠️ Tech Stack
+## Tech Stack
 * Python, TensorFlow (ResNet50), Scikit-Learn (NearestNeighbors), Streamlit, NumPy, Pillow (PIL)
 
-## ⚙️ Installation & Setup Instructions (Locally on Windows)
+## Installation & Setup Instructions (Locally on Windows)
 
 ### 1. Clone the Project & Set Up Environment
 1. git clone
