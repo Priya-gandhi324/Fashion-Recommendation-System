@@ -1,0 +1,45 @@
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables (secret credentials)
+.env
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Other potential Jupyter metadata
+*/.ipynb_checkpoints/
+
+# Compressed archives
+*.zip
+
+# Chrome temporary download files
+*.crdownload
+
+# Large dataset archives and extracted folders
+archive.zip
+archive/
+
+# Pickle files (serialized models/weights)
+*.pkl
+
+# Other common deep learning model formats
+*.h5
+*.pth
+*.pt
+*.onnx
+
+# Ignore the entire fashion dataset folder and all images inside
+fashion-dataset/
