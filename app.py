@@ -7,8 +7,23 @@ from tensorflow.keras.layers import GlobalMaxPool2D
 
 from sklearn.neighbors import NearestNeighbors
 import os
+import urllib.request
 from numpy.linalg import norm
 import streamlit as st
+
+Image_features_PATH = 'Image_features.pkl'
+filenames_PATH = 'filenames.pkl'
+
+Image_features_URL = 'https://huggingface.co/datasets/pihu25/fashion-recommendation-features/resolve/main/Image_features.pkl'
+filenames_URL = 'https://huggingface.co/datasets/pihu25/fashion-recommendation-features/resolve/main/filenames.pkl'
+
+def download_file(url, output_path):
+    if not os.path.exists(output_path):
+        with st.spinner(f"Downloading required model file ({output_path}). Please wait..."):
+            urllib.request.urlretrieve(url, output_path)
+
+download_file(Image_features_URL, Image_features_PATH)
+download_file(filenames_URL, filenames_PATH)
 
 st.header('Fashion Recommendation System')
 
